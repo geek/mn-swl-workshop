@@ -21,8 +21,8 @@ serializer:
     - INFLUXDB_HOST=influxdb
     - INFLUXDB_USER=root
     - INFLUXDB_PWD=root
-  ports:
-    - "10000:10000"
+  expose:
+    - "10000"
   restart: always
 frontend:
   build: ./frontend

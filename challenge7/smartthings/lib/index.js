@@ -49,7 +49,7 @@ seneca.add({ role: 'smartthings', cmd: 'write', type: 'temperature', passcode },
 });
 
 
-seneca.listen({ port: +process.env.PORT, host: '0.0.0.0' });
+seneca.listen({ port: process.env.PORT });
 
 
 function getPoints (type, cb) {
