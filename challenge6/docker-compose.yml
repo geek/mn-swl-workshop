@@ -1,0 +1,37 @@
+influxdb:
+  image: influxdb:1.1.1-alpine
+  ports:
+    - "8086:8086"
+    - "8083:8083"
+  restart: always
+  environment:
+    - ADMIN_USER=root
+    - INFLUXDB_INIT_PWD=root
+    - INFLUXDB_ADMIN_ENABLED=true
+    - INFLUXDB_REPORTING_DISABLED=true
+    - INFLUXDB_DATA_QUERY_LOG_ENABLED=false
+    - INFLUXDB_HTTP_LOG_ENABLED=false
+    - INFLUXDB_CONTINUOUS_QUERIES_LOG_ENABLED=false
+serializer:
+  build: ./serializer
+  links:
+    - influxdb
+  environment:
+    - PORT=10000
+    - INFLUXDB_HOST=influxdb
+    - INFLUXDB_USER=root
+    - INFLUXDB_PWD=root
+  ports:
+    - "10000:10000"
+  restart: always
+frontend:
+  build: ./frontend
+  links:
+    - serializer
+  environment:
+    - PORT=10001
+    - SERIALIZER_HOST=serializer
+    - SERIALIZER_PORT=10000
+  ports:
+    - "10001:10001"
+  restart: always

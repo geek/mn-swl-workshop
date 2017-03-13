@@ -55,7 +55,7 @@ Instead of starting each container separately, we can use docker-compose to asse
 
 curl command to add temperature data
 ```sh
-curl -X POST -d '[{"value": 32}]' http://localhost:10000/write/temperature  --header "Content-Type:application/json"
+curl -X POST -d '[{"value": 42}]' http://localhost:10000/write/temperature  --header "Content-Type:application/json"
 ```
 
 __hint__ read about the [`docker-compose up`](https://docs.docker.com/compose/reference/up/) command
