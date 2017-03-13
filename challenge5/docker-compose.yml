@@ -14,6 +14,8 @@ influxdb:
     - INFLUXDB_CONTINUOUS_QUERIES_LOG_ENABLED=false
 serializer:
   build: ./serializer
+  links:
+    - influxdb
   environment:
     - PORT=10000
     - INFLUXDB_HOST=influxdb
@@ -24,6 +26,8 @@ serializer:
   restart: always
 frontend:
   build: ./frontend
+  links:
+    - serializer
   environment:
     - PORT=10001
     - SERIALIZER_HOST=serializer
