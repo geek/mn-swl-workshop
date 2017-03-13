@@ -1,11 +1,13 @@
 ## Challenge 3
 
-![image](../images/challenge1.png)
+![image](../images/challenge3.png)
 
-Your challenge is to start the frontend so that it's listening on port 10001. Verify the results by pointing your browser to [http://localhost:10001](). You should see a chart. Simple!
+Your challenge is to update the `Dockerfile` in the frontend folder so that it has the correct CMD to start the process. Once this is ready, test your solution by building the frontend image and running the container. Remember to pass the environment variable for the port to listen on.
 
 
 __hint__ the frontend expects an environment variable named PORT
+
+__hint__ refer to the [Dockerfile reference page](https://docs.docker.com/engine/reference/builder/)
 
 
 ## Next Up: [Challenge 4](../challenge4/README.md)
