@@ -2,7 +2,7 @@
   "consul": "localhost:8500",
   "services": [
     {
-      "name": "frontend",
+      "name": "serializer",
       "port": {{.PORT}},
       "health": "/usr/bin/curl -o /dev/null --fail -s http://localhost:{{.PORT}}/check-it-out",
       "poll": 3,
@@ -24,7 +24,7 @@
   ],
   "backends": [
     {
-      "name": "serializer",
+      "name": "influxdb",
       "poll": 3,
       "onChange": "pkill -SIGHUP node"
     }

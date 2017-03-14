@@ -28,5 +28,14 @@
       "poll": 3,
       "onChange": "pkill -SIGHUP node"
     }
-  ]
+  ],
+  "telemetry": {
+    "port": 9090,
+    "tags": ["op"],
+    "sensors": [
+      {
+
+      }
+    ]
+  }
 }

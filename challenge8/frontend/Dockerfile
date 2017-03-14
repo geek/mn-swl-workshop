@@ -26,9 +26,6 @@ ENV CONTAINERPILOT_PATH=/etc/containerpilot.json
 COPY containerpilot.json ${CONTAINERPILOT_PATH}
 ENV CONTAINERPILOT=file://${CONTAINERPILOT_PATH}
 
-COPY memory.sh /bin/memory.sh
-RUN chmod 755 /bin/memory.sh
-
 # Install our application
 RUN mkdir -p /opt/app/lib/public
 COPY package.json /opt/app/

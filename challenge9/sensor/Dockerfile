@@ -27,10 +27,9 @@ COPY containerpilot.json ${CONTAINERPILOT_PATH}
 ENV CONTAINERPILOT=file://${CONTAINERPILOT_PATH}
 
 # Install our application
-RUN mkdir -p /opt/app/lib/public
+RUN mkdir -p /opt/app/lib
 COPY package.json /opt/app/
-COPY lib/*.js /opt/app/lib/
-COPY lib/public /opt/app/lib/public
+COPY lib/* /opt/app/lib/
 RUN cd /opt/app && npm install
 
 ENTRYPOINT ["/bin/containerpilot", "node"]

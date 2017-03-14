@@ -28,21 +28,5 @@
       "poll": 3,
       "onChange": "pkill -SIGHUP node"
     }
-  ],
-  "telemetry": {
-    "port": 9090,
-    "tags": ["op"],
-    "sensors": [
-      {
-        "namespace": "containerpilot",
-        "subsystem": "frontend",
-        "name": "free_memory",
-        "help": "Frontend Free Memory",
-        "type": "counter",
-        "poll": 5,
-        "check": ["/bin/memory.sh"],
-        "timeout": "5s"
-      }
-    ]
-  }
+  ]
 }
