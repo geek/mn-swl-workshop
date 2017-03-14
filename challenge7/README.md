@@ -1,4 +1,4 @@
-# Solution to Challenge 6
+## Solution to Challenge 6
 
 1. Update the _docker-compose.yml_ with the smartthings and temperature services
 ```

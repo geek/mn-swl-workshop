@@ -1,4 +1,4 @@
-# Solution to Challenge 8
+## Solution to Challenge 8
 
 1. Update the _docker-compose.yml_ with the humidity and motion services, as shown below.
 ```

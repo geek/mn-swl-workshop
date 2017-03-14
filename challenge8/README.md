@@ -1,4 +1,4 @@
-# Solution to Challenge 7
+## Solution to Challenge 7
 
 1. Start the services `docker-compose up -d`
 

@@ -1,4 +1,4 @@
-# Solution to Challenge 5
+## Solution to Challenge 5
 
 1. Start the services
 ```

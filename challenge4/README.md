@@ -1,4 +1,4 @@
-# Solution to Challenge 3
+## Solution to Challenge 3
 
 1. Update the Dockerfile with the CMD below
 ```sh

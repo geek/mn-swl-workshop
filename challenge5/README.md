@@ -1,4 +1,4 @@
-# Solution to Challenge 4
+## Solution to Challenge 4
 
 1. Build the frontend image
 ```
