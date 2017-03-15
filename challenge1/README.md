@@ -7,5 +7,6 @@ Your challenge is to start the frontend so that it's listening on port 10001. Ve
 
 __hint__ the frontend expects an environment variable named PORT
 
+### [Solution](./SOLUTION.md)
 
 ## Next Up: [Challenge 2](../challenge2/README.md)

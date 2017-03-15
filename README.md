@@ -15,7 +15,7 @@ Example microservices implementation using Node.js and Docker. Below is an archi
 
 * Each challenge has its own folder
 * Read the README.md for each challenge
-* Each subsequent challenge has the solution to the previous challenge
+* The solution to each challenge is in the SOLUTION.md file
 
 
 ## What we are Building

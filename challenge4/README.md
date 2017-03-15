@@ -1,14 +1,3 @@
-## Solution to Challenge 3
-
-1. Update the Dockerfile with the CMD below
-```sh
-CMD ["node", "/opt/app/lib"]
-```
-2. Build the image with `docker build -t frontend .`
-3. Create and run the container with `docker run -e PORT=10001 -p 10001:10001 --rm frontend`
-
-Point your browser to [http://localhost:10001](). You should see the temperature chart.
-
 ## Challenge 4
 
 ![image](../images/challenge4.png)
@@ -43,5 +32,9 @@ __hint__ InfluxDB expects the following environment variables to create the corr
 * `INFLUXDB_INIT_PWD=root`
 
 __hint__ Start each container with a `--name` option to make them easier to `inspect`
+
+
+### [Solution](./SOLUTION.md)
+
 
 ## Next Up: [Challenge 5](../challenge5/README.md)

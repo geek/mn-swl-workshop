@@ -1,12 +1,3 @@
-## Solution to Challenge 2
-
-```sh
-docker run -p 8083:8083 -p 8086:8086 -e "ADMIN_USER=root" -e "INFLUXDB_INIT_PWD=root" -e "INFLUXDB_ADMIN_ENABLED=true" --rm influxdb:1.1.1-alpine
-```
-
-Point your browser to [http://localhost:8083](). You should see the InfluxDB web interface.
-
-
 ## Challenge 3
 
 ![image](../images/challenge3.png)
@@ -17,6 +8,9 @@ Your challenge is to update the `Dockerfile` in the frontend folder so that it h
 __hint__ the frontend expects an environment variable named PORT
 
 __hint__ refer to the [Dockerfile reference page](https://docs.docker.com/engine/reference/builder/)
+
+
+### [Solution](./SOLUTION.md)
 
 
 ## Next Up: [Challenge 4](../challenge4/README.md)

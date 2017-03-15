@@ -1,15 +1,3 @@
-## Solution to Challenge 1
-
-```sh
-cd frontend/
-npm install
-PORT=10001 node .
-```
-
-Point your browser to [http://localhost:10001](). You should see a chart, like the one shown here:
-
-![image](../images/frontend.png)
-
 ## Challenge 2
 
 ![image](../images/challenge2.png)
@@ -33,5 +21,7 @@ __hint__ InfluxDB requires the following environment variables are set
 * `ADMIN_USER=root`
 * `INFLUXDB_INIT_PWD=root`
 * `INFLUXDB_ADMIN_ENABLED=true`
+
+### [Solution](./SOLUTION.md)
 
 ## Next Up: [Challenge 3](../challenge3/README.md)
