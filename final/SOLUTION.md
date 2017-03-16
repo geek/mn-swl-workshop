@@ -5,7 +5,7 @@ eval $(triton env)
 docker-compose up -d
 ```
 
-Now everything is running on the Triton!
+Now everything is running on Triton!
 
 To find your frontend IP use:
 
